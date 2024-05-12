@@ -76,3 +76,12 @@ $ git commit -m "Исправить #334, добавить график темп
 Например: `Use library mega_lib_300`, `Fix exit button` и так далее.
 
 Эти рекомендации сложились исторически, и им следуют многие проекты.
+
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+
+%% стрелка без текста для примера: 
+  A --> B;
+``` 
